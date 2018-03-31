@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
 
-import Main.GamePanel;
+import Main_StartGame.GamePanel;
 
 public class Title {
 	

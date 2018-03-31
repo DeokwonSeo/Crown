@@ -21,7 +21,7 @@ import Entity.Enemies.Fox;
 import Entity.Enemies.Rat;
 import Entity.Enemies.Snake;
 import Handlers.Keys;
-import Main.GamePanel;
+import Main_StartGame.GamePanel;
 import TileMap.Background;
 import TileMap.TileMap;
 

@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 import Entity.PlayerSave;
 import Handlers.Keys;
-import Main.GamePanel;
+import Main_StartGame.GamePanel;
 
 public class MenuState extends GameState {
 	

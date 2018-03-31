@@ -1,4 +1,4 @@
-package Main;
+package Main_StartGame;
 
 import java.awt.Dimension;
 import java.awt.Graphics;

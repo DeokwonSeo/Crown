@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 import javax.imageio.ImageIO;
 
-import Main.GamePanel;
+import Main_StartGame.GamePanel;
 
 
 public class TileMap {

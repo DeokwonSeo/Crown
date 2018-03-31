@@ -9,7 +9,7 @@ import com.sun.prism.paint.Color;
 import Entity.Enemy;
 import Entity.Player;
 import Handlers.Content;
-import Main.GamePanel;
+import Main_StartGame.GamePanel;
 import TileMap.TileMap;
 
 public class Snake extends Enemy {

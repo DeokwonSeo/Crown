@@ -1,7 +1,7 @@
 package GameState;
 
 
-import Main.GamePanel;
+import Main_StartGame.GamePanel;
 
 public class GameStateManager {
 	

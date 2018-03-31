@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
 import Handlers.Keys;
-import Main.GamePanel;
+import Main_StartGame.GamePanel;
 
 
 public class AcidState extends GameState {
