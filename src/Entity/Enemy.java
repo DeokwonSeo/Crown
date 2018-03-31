@@ -25,7 +25,6 @@ public class Enemy extends MapObject {
 	
 	public void hit(int damage) {
 		if(dead || flinching) return;
-		//JukeBox.play("enemyhit");
 		health -= damage;
 		if(health < 0) health = 0;
 		if(health == 0) dead = true;

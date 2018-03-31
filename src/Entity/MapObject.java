@@ -3,8 +3,6 @@ package Entity;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
-import com.sun.prism.paint.Color;
-
 import Main.GamePanel;
 import TileMap.Tile;
 import TileMap.TileMap;
@@ -242,7 +240,8 @@ public abstract class MapObject {
 				null
 			);
 		}
-		// draw collision box
+		
+		// draw collision box [ 캐릭터 및 몬스터 넓이 확인 ]
 		
 		/*Rectangle r = getRectangle();
 		r.x += xmap;

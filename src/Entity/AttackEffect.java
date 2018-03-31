@@ -10,10 +10,6 @@ public class AttackEffect extends MapObject {
 
 	private boolean remove;
 	static BufferedImage[] sprites;
-	private int tick;
-	private double a;
-	private double b;
-	
 	
 	public AttackEffect(TileMap tm, double x, double y) {
 		super(tm);
@@ -28,9 +24,7 @@ public class AttackEffect extends MapObject {
 		animation.setFrames(sprites);
 		animation.setDelay(2);
 		facingRight=true;
-		//tick = 0;
-		//a = Math.random()  + 0.05;
-		//b = Math.random() + 0.05;
+
 	}
 	public void update() {
 		
@@ -40,10 +34,7 @@ public class AttackEffect extends MapObject {
 		if(animation.hasPlayedOnce()) {
 			remove = true;
 		}
-		//tick++;
-		//x = Math.sin(a * tick) + x;
-		//y = Math.sin(b * tick) + y;
-		
+
 		
 	}
 	public boolean shouldRemove() { return remove; }

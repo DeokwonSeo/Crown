@@ -119,6 +119,7 @@ public class Player extends MapObject {
 		health = maxHealth = 3;
 		footDust = new ArrayList<FootDust>();
 		attackEffect = new ArrayList<AttackEffect>();
+		
 		// load sprites
 		try {
 			
@@ -197,7 +198,6 @@ public class Player extends MapObject {
 		if(knockback) return;
 		if(!attacking && !upattacking && !charging) {
 			charging = true;
-			//JukeBox.play("playercharge");
 			chargingTick = 0;
 		}
 	}
@@ -229,7 +229,6 @@ public class Player extends MapObject {
 	
 	public void hit(int damage) {
 		if(flinching) return;
-		//JukeBox.play("playerhit");
 		stop();
 		health -= damage;
 		if(health < 0) health = 0;
@@ -363,8 +362,6 @@ public class Player extends MapObject {
 					j--;
 				}
 			}
-		// check teleporting
-		
 		
 		// update position
 		boolean isFalling = falling;
@@ -392,7 +389,6 @@ public class Player extends MapObject {
 				upattacking = false;
 				
 			}
-			
 			
 		}
 		if(currentAction == CHARGING) {
@@ -516,11 +512,6 @@ public class Player extends MapObject {
 		}
 		
 		animation.update();
-		
-		
-			
-		
-		
 		
 		// set direction
 		if(!attacking && !upattacking && !charging && !knockback) {

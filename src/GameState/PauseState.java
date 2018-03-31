@@ -6,6 +6,8 @@ import java.awt.Graphics2D;
 
 import Handlers.Keys;
 
+
+//»≠∏È ∏ÿ√ﬂ±‚
 public class PauseState extends GameState {
 	
 	private Font font;

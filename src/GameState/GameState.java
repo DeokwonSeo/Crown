@@ -2,6 +2,8 @@ package GameState;
 
 import java.awt.Graphics2D;
 
+
+//게임상태 활성화
 public abstract class GameState {
 	
 	protected GameStateManager gsm;

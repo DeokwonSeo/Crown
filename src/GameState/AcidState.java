@@ -10,6 +10,7 @@ import javax.imageio.ImageIO;
 import Handlers.Keys;
 import Main.GamePanel;
 
+
 public class AcidState extends GameState {
 	
 	private float hue;
@@ -38,7 +39,8 @@ public class AcidState extends GameState {
 		if(hue > 1) hue = 0;
 		angle += 0.1;
 	}
-	
+
+	//화면 출력
 	public void draw(Graphics2D g) {
 		g.setColor(color);
 		g.fillRect(0, 0, GamePanel.WIDTH, GamePanel.HEIGHT);

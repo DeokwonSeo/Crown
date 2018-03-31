@@ -68,28 +68,24 @@ public class Level1AState extends GameState {
 		tileMap.loadTiles("/Tilesets/Stage1_tiles.png");
 		tileMap.loadMap("/Maps/Stage1.map");
 		tileMap.setPosition(20, 0);
-		/*tileMap.setBounds(
-			tileMap.getWidth() - 1 * tileMap.getTileSize(),
-			tileMap.getHeight() - 2 * tileMap.getTileSize(),
-			0, 0
-		);*/
 		tileMap.setTween(1);
+		
 		// teleport
 		teleport = new Teleport(tileMap);
 		teleport.setPosition(5054, 136);
+		
 		// player
 		player = new Player(tileMap);
 		player.setPosition(60, 200);
 		player.setHealth(PlayerSave.getHealth());
 		player.setLives(PlayerSave.getLives());
 		player.setTime(PlayerSave.getTime());
-
+		
 		// enemies
 		enemies = new ArrayList<Enemy>();
 		eprojectiles = new ArrayList<EnemyProjectile>();
 		populateEnemies();
 		
-
 		// init player
 		player.init(enemies);
 		
@@ -113,24 +109,14 @@ public class Level1AState extends GameState {
 			e.printStackTrace();
 		}
 		
-		
-		
 		// start event
 		eventStart = true;
 		tb = new ArrayList<Rectangle>();
 		eventStart();
 		
-		// sfx
-		//JukeBox.load("/SFX/teleport.mp3", "teleport");
-		//JukeBox.load("/SFX/explode.mp3", "explode");
-		//JukeBox.load("/SFX/enemyhit.mp3", "enemyhit");
-		
-		// music
-		//JukeBox.load("/Music/level1.mp3", "level1");
-		//JukeBox.loop("level1", 600, JukeBox.getFrames("level1") - 2200);
-		
 	}
 	
+	//몬스터 각 위치에 생성
 	private void populateEnemies() {
 		enemies.clear();
 		

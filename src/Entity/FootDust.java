@@ -18,9 +18,6 @@ public class FootDust extends MapObject {
 		width =40;
 		height =20;
 		
-		
-		
-
 		sprites = Content.FootDust[0];
 		animation.setFrames(sprites);
 		animation.setDelay(3);

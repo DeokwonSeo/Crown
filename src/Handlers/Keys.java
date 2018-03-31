@@ -13,6 +13,7 @@ public class Keys {
 	public static boolean keyState[] = new boolean[NUM_KEYS];
 	public static boolean prevKeyState[] = new boolean[NUM_KEYS];
 	
+	
 	public static int UP = 0;
 	public static int LEFT = 1;
 	public static int DOWN = 2;
@@ -24,14 +25,15 @@ public class Keys {
 	public static int ENTER = 8;
 	public static int ESCAPE = 9;
 	
+	//키보드 설정
 	public static void keySet(int i, boolean b) {
 		if(i == KeyEvent.VK_UP) keyState[UP] = b;
 		else if(i == KeyEvent.VK_LEFT) keyState[LEFT] = b;
 		else if(i == KeyEvent.VK_DOWN) keyState[DOWN] = b;
 		else if(i == KeyEvent.VK_RIGHT) keyState[RIGHT] = b;
-		else if(i == KeyEvent.VK_W) keyState[BUTTON1] = b;
-		else if(i == KeyEvent.VK_R) keyState[BUTTON3] = b;
-		else if(i == KeyEvent.VK_F) keyState[BUTTON4] = b;
+		else if(i == KeyEvent.VK_A) keyState[BUTTON1] = b;
+		else if(i == KeyEvent.VK_D) keyState[BUTTON3] = b;
+		else if(i == KeyEvent.VK_S) keyState[BUTTON4] = b;
 		else if(i == KeyEvent.VK_ENTER) keyState[ENTER] = b;
 		else if(i == KeyEvent.VK_ESCAPE) keyState[ESCAPE] = b;
 	}
