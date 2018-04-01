@@ -26,13 +26,6 @@ public class Content {
 	
 	
 	// 이미지 배열 출력
-	/**
-	 * 
-	 * @param s
-	 * @param w
-	 * @param h
-	 * @return
-	 */
 	public static BufferedImage[][] load(String s, int w, int h) {
 		BufferedImage[][] ret;
 		try {
